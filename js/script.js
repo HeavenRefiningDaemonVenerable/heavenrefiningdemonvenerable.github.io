@@ -1,4 +1,4 @@
-alert("load")
+
 window.moduleLoaded = true;
 
 import { game } from './game-state.js';
@@ -85,6 +85,14 @@ setInterval(() => {
         console.error('Auto-save failed:', e);
     }
 }, CONFIG.SAVE_INTERVAL);
+
+window.addEventListener("beforeunload", () => {
+  try {
+        saveGame();
+    } catch (e) {
+        console.error('-save failed:', e);
+    }
+});
 
 document.body.addEventListener("click", function(e) {
     if (e.target.tagName === "BUTTON" || e.target.tagName === "SPAN" || e.target.tagName === "DIV") {
