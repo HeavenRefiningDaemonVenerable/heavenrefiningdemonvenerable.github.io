@@ -13,10 +13,10 @@ export const buildingData = {
      
     stardustCollector: { name: 'Stardust Collector', desc: 'Basic unit that gathers loose stardust from surrounding space.' },
     stardustExtractor: { name: 'Stardust Extractor', desc: 'Pulls trace stardust from interstellar debris.' },
-    stardustCondenser: { name: 'Stardust Condenser', desc: 'NEW: Compresses ambient stardust into collectible particles.' },
+    stardustCondenser: { name: 'Stardust Condenser', desc: 'Compresses ambient stardust into collectible particles.' },
     stardustProcessor: { name: 'Stardust Processor', desc: 'Refines raw stardust into usable form.' },
     stardustEngine: { name: 'Stardust Engine', desc: 'Mechanized core that drives large-scale stardust output.' },
-    stardustRefinery: { name: 'Stardust Refinery', desc: 'NEW: Advanced purification system for maximum efficiency.' },
+    stardustRefinery: { name: 'Stardust Refinery', desc: 'Advanced purification system for maximum efficiency.' },
     stardustFactory: { name: 'Stardust Factory', desc: 'Automated lines mass-produce refined stardust.' },
     stardustReactor: { name: 'Stardust Reactor', desc: 'Converts stored energy into a continuous stardust flow.' },
     stardustPlant: { name: 'Stardust Plant', desc: 'Industrial setup designed for heavy stardust production.' },
@@ -27,27 +27,27 @@ export const buildingData = {
      
     shardCollector: { name: 'Shard Collector', desc: 'Collects raw shard fragments from stardust processing units.' },
     shardPress: { name: 'Shard Press', desc: 'Compresses raw shard material into stable forms.' },
-    shardCrystallizer: { name: 'Shard Crystallizer', desc: 'NEW: Forces shard formation through quantum pressure.' },
-    shardFoundry: { name: 'Shard Foundry', desc: 'Fuses compressed material into full celestial shards.' },
+    shardCrystallizer: { name: 'Shard Crystallizer', desc: 'Forces shard formation through grabitational pressure.' },
+    shardFoundry: { name: 'Shard Foundry', desc: 'Fuses compressed material into full star shards.' },
     shardPlant: { name: 'Shard Plant', desc: 'Scaled-up facility for consistent shard creation.' },
     shardReactor: { name: 'Shard Reactor', desc: 'Uses contained power cycles to produce shards efficiently.' },
     shardComplex: { name: 'Shard Complex', desc: 'Centralized industrial site focused on large-volume shard output.' },
-    shardSingularity: { name: 'Shard Singularity', desc: 'NEW: Warps space-time to multiply shard output.' },
+    shardSingularity: { name: 'Shard Singularity', desc: 'Warpws space-time to multiply shard oeutput.' },
     
      
     coreExtractor: { name: 'Core Extractor', desc: 'Pulls unstable cores from processed shards.' },
     coreProcessor: { name: 'Core Processor', desc: 'Stabilizes extracted cores into usable energy units.' },
-    coreCondenser: { name: 'Core Condenser', desc: 'NEW: Compacts nebula matter into dense cores.' },
+    coreCondenser: { name: 'Core Condenser', desc: 'Compacts nebula matter into dense cores.' },
     coreReactor: { name: 'Core Reactor', desc: 'Recycles core energy to maintain steady core production.' },
     corePlant: { name: 'Core Plant', desc: 'High-capacity facility for generating multiple nebula cores at once.' },
     coreAssembly: { name: 'Core Assembly', desc: 'Automates advanced construction of nebula cores.' },
     coreGenerator: { name: 'Core Generator', desc: 'Final-tier machine capable of sustaining entire networks of core output.' },
-    coreNexus: { name: 'Core Nexus', desc: 'NEW: Legendary structure channeling pure cosmic energy.' },
+    coreNexus: { name: 'Core Nexus', desc: 'Legendary structure channeling pure cosmic energy.' },
     
      
-    stellarAmplifier: { name: 'Stellar Amplifier', desc: 'NEW: Boosts all stardust production by 5% per unit.' },
-    cosmicHarvester: { name: 'Cosmic Harvester', desc: 'NEW: Produces all three resources simultaneously.' },
-    voidEngine: { name: 'Void Engine', desc: 'NEW: Taps into void energy for massive production.' }
+    stellarAmplifier: { name: 'Stellar Amplifier', desc: 'Boosts all stardust production by 5% per unit.' },
+    cosmicHarvester: { name: 'Cosmic Harvester', desc: 'Produces all three resources simultaneously.' },
+    voidEngine: { name: 'Void Engine', desc: 'Taps into void energy for massive production.' }
 };
 
 export const upgradeData = {
@@ -113,21 +113,21 @@ export const upgradeData = {
     synergy4: { name: 'Ultra Synergy', desc: 'NEW: 4x boost if you own 20+ different buildings' },
     
      
-    shardBoost1: { name: 'Shard Efficiency I', desc: '2x Celestial Shard production' },
-    shardBoost2: { name: 'Shard Efficiency II', desc: '2.5x Celestial Shard production' },  
-    shardBoost3: { name: 'Shard Efficiency III', desc: '3x Celestial Shard production' },  
-    shardBoost4: { name: 'Shard Efficiency IV', desc: 'NEW: 4x Celestial Shard production' },
+    shardBoost1: { name: 'Shard Efficiency I', desc: '2x Star Shard production' },
+    shardBoost2: { name: 'Shard Efficiency II', desc: '2.5x Star Shard production' },  
+    shardBoost3: { name: 'Shard Efficiency III', desc: '3x Star Shard production' },  
+    shardBoost4: { name: 'Shard Efficiency IV', desc: 'NEW: 4x Star Shard production' },
     
      
-    coreBoost1: { name: 'Core Efficiency I', desc: '2x Nebula Core production' },
-    coreBoost2: { name: 'Core Efficiency II', desc: '2.5x Nebula Core production' },  
-    coreBoost3: { name: 'Core Efficiency III', desc: '3x Nebula Core production' },  
-    coreBoost4: { name: 'Core Efficiency IV', desc: 'NEW: 4x Nebula Core production' },
+    //coreBoost1: { name: 'Core Efficiency I', desc: '2x Nebula Core production' },
+    //coreBoost2: { name: 'Core Efficiency II', desc: '2.5x Nebula Core production' },  
+    //coreBoost3: { name: 'Core Efficiency III', desc: '3x Nebula Core production' },  
+    //coreBoost4: { name: 'Core Efficiency IV', desc: 'NEW: 4x Nebula Core production' },
     
      
     shardToStardust: { name: 'Shard Converter', desc: '1% of Shard/s adds to Stardust/s' },
-    coreToShard: { name: 'Core Infusion', desc: '1% of Core/s adds to Shard/s' },
-    coreToStardust: { name: 'Core Amplifier', desc: '0.5% of Core/s adds to Stardust/s' },
+    //coreToShard: { name: 'Core Infusion', desc: '1% of Core/s adds to Shard/s' },
+    //coreToStardust: { name: 'Core Amplifier', desc: '0.5% of Core/s adds to Stardust/s' },
     
      
     autoClick1: { name: 'Auto-Forge I', desc: 'Automatically click 1 time per second' },
