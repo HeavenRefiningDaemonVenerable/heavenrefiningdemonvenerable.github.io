@@ -1,0 +1,36 @@
+/* No animations */
+.no-animations * {
+    animation: none !important;
+    transition: none !important;
+}
+
+/* Compact mode */
+.compact-mode .building-item {
+    padding: 6px;
+}
+
+.compact-mode .item-description {
+    font-size: 0.8em;
+}
+
+.compact-mode .stat-row {
+    padding: 6px 0;
+}
+
+/* No particles */
+.no-particles .star,
+.no-particles .prestige-particle,
+.no-particles .mini-prestige-particle {
+    display: none !important;
+}
+
+/* No screen shake */
+.no-shake {
+    /* Disable any shake animations you might add */
+}
+
+/* No affordable highlight */
+.no-highlight .building-item.affordable,
+.no-highlight .tree-node.available {
+    box-shadow: none !important;
+}

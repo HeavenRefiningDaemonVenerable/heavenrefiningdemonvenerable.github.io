@@ -1,0 +1,244 @@
+.prestige-animation-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 9999;
+    overflow: hidden;
+    background: transparent;
+}
+
+/* Simple fade to white like Cookie Clicker */
+.prestige-fade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#ececec;
+    animation: prestigeFadeInOut 5s ease-in-out forwards;
+}
+
+@keyframes prestigeFadeInOut {
+    0% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    85% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Cookie Clicker style floating particles */
+.prestige-particle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 4px;
+    height: 4px;
+    background: white;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: particleFloat var(--duration) ease-out forwards;
+    box-shadow: 0 0 8px 2px rgba(255, 255, 255, 0.8);
+}
+
+@keyframes particleFloat {
+    0% {
+        transform: translate(-50%, -50%) translate(0, 0) scale(0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%) translate(var(--tx), var(--ty)) scale(1);
+        opacity: 0;
+    }
+}
+
+/* Heavenly glow effect */
+.prestige-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(159, 122, 234, 0.4) 0%, transparent 70%);
+    animation: glowPulse 5s ease-in-out forwards;
+}
+
+@keyframes glowPulse {
+    0% {
+        width: 100px;
+        height: 100px;
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    50% {
+        width: 600px;
+        height: 600px;
+        opacity: 0.8;
+    }
+    100% {
+        width: 800px;
+        height: 800px;
+        opacity: 0;
+    }
+}
+
+/* Cookie Clicker style text reveal */
+.prestige-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    animation: textFadeIn 5s ease-out forwards;
+}
+
+.prestige-text h1 {
+    font-size: 4em;
+    color: #9f7aea;
+    margin: 0;
+    margin-bottom: 20px;
+    text-shadow: 
+        0 0 20px rgba(159, 122, 234, 0.8),
+        0 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.prestige-text .gain {
+    font-size: 2.5em;
+    color: #ffd700;
+    font-weight: 900;
+    text-shadow: 
+        0 0 15px rgba(255, 215, 0, 0.8),
+        0 2px 4px rgba(0, 0, 0, 0.3);
+    margin: 15px 0;
+}
+
+.prestige-text .multiplier {
+    font-size: 1.5em;
+    color: #68d391;
+    font-weight: 700;
+    text-shadow: 
+        0 0 10px rgba(104, 211, 145, 0.6),
+        0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes textFadeIn {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) translateY(30px);
+    }
+    20% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+        transform: translate(-50%, -50%) translateY(0px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) translateY(0px);
+    }
+}
+
+/* Heavenly rays like Cookie Clicker */
+.prestige-ray {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 60%;
+    background: linear-gradient(to bottom, 
+        transparent 0%, 
+        rgba(255, 255, 255, 0.3) 20%,
+        rgba(255, 255, 255, 0.5) 50%,
+        rgba(255, 255, 255, 0.3) 80%,
+        transparent 100%);
+    transform-origin: center 0%;
+    transform: translate(-50%, -50%) rotate(var(--angle)) translateY(-50%);
+    animation: rayRotate 8s linear infinite;
+    opacity: 0;
+    animation: rayFade 5s ease-in-out forwards, rayRotate 8s ease-in-out infinite;
+}
+
+@keyframes rayFade {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.6;
+    }
+    80% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes rayRotate {
+    from {
+        transform: translate(-50%, -50%) rotate(var(--angle)) translateY(-50%);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(calc(var(--angle) + 360deg)) translateY(-50%);
+    }
+}
+
+/* Cookie Clicker style sparkles */
+.prestige-sparkle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: white;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    animation: sparkleTwinkle var(--duration) ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes sparkleTwinkle {
+    0% {
+        transform: translate(var(--start-x), var(--start-y)) scale(0) rotate(0deg);
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    50% {
+        transform: translate(var(--mid-x), var(--mid-y)) scale(1.5) rotate(180deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(var(--end-x), var(--end-y)) scale(0) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .prestige-text h1 {
+        font-size: 2.5em;
+    }
+    
+    .prestige-text .gain {
+        font-size: 1.8em;
+    }
+    
+    .prestige-text .multiplier {
+        font-size: 1.2em;
+    }
+}
