@@ -179,12 +179,12 @@ export const game = {
         quadrillion: { name: 'Quadrillion Stars', desc: 'Reach 1 quadrillion total stardust', unlocked: false },
         
          
-        firstShard: { name: 'Shard Seeker', desc: 'Collect 10 celestial shards', unlocked: false },
-        moreShard: { name: 'Shard Collector', desc: 'Collect 1,000 celestial shards', unlocked: false },
-        evenmoreShard: { name: 'Shard Hoarder', desc: 'Collect 10,000 celestial shards', unlocked: false },
-        tonsmoreShard: { name: 'Shard Master', desc: 'Collect 1,000,000 celestial shards', unlocked: false },
-        hellmoreShard: { name: 'Shard Overlord', desc: 'Collect 1 billion celestial shards', unlocked: false },
-        hellmore2Shard: { name: 'Shard God', desc: 'Collect 1 trillion celestial shards', unlocked: false },
+        firstShard: { name: 'Shard Seeker', desc: 'Collect 10 star shards', unlocked: false },
+        moreShard: { name: 'Shard Collector', desc: 'Collect 1,000 star shards', unlocked: false },
+        evenmoreShard: { name: 'Shard Hoarder', desc: 'Collect 10,000 star shards', unlocked: false },
+        tonsmoreShard: { name: 'Shard Master', desc: 'Collect 1,000,000 star shards', unlocked: false },
+        hellmoreShard: { name: 'Shard Overlord', desc: 'Collect 1 billion star shards', unlocked: false },
+        hellmore2Shard: { name: 'Shard God', desc: 'Collect 1 trillion star shards', unlocked: false },
         
          
         firstBuilding: { name: 'Builder', desc: 'Purchase your first building', unlocked: false },
