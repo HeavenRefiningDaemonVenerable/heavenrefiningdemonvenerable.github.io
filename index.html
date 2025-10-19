@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Star Forge</title>
+
+<link rel="stylesheet" href="./css/overridesSettings.css">
+<link rel="stylesheet" href="./css/text.css">
+<link rel="stylesheet" href="./css/shop.css">
+<link rel="stylesheet" href="./css/menu.css">
+<link rel="stylesheet" href="./css/prestige-anim.css">
+
+<script>
+    window.moduleLoaded = false;
+    
+    setTimeout(() => {
+        if (!window.moduleLoaded) {
+            console.error('Module failed to load, reloading...');
+            location.reload();
+        }
+    }, 700);
+</script>
+<script type="module" src="/js/script.js"></script>
+</head>
+<body>
+        <header>
+            <h1>STAR FORGE</h1>
+            <div style="color: #a0aec0; margin-top: 5px;">An incremental game based on space.</div>
+        </header>
+    <div class="app"id="app"></div>
+    <audio id="click-sound" controls preload="auto" style="display: none"></audio>
+     <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+    <script defer>eruda.init();</script>
+
+</body></html>
