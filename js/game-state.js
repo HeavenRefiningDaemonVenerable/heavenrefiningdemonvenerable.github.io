@@ -53,14 +53,14 @@ export const game = {
         shardSingularity: { count: 0, baseCost: 36000000, baseProduction: 800000, produces: 'starShards', costType: 'starShards' },
         
          
-        coreExtractor: { count: 0, baseCost: 1000, baseProduction: 0.1, produces: 'nebulaCores', costType: 'starShards' },
-        coreProcessor: { count: 0, baseCost: 10000, baseProduction: 1, produces: 'nebulaCores', costType: 'starShards' },
-        coreCondenser: { count: 0, baseCost: 100000, baseProduction: 10, produces: 'nebulaCores', costType: 'starShards' },
-        coreReactor: { count: 0, baseCost: 1000000, baseProduction: 80, produces: 'nebulaCores', costType: 'starShards' },
-        corePlant: { count: 0, baseCost: 10000000, baseProduction: 600, produces: 'nebulaCores', costType: 'starShards' },
-        coreAssembly: { count: 0, baseCost: 100000000, baseProduction: 5000, produces: 'nebulaCores', costType: 'starShards' },
-        coreGenerator: { count: 0, baseCost: 1000000000, baseProduction: 40000, produces: 'nebulaCores', costType: 'starShards' },
-        coreNexus: { count: 0, baseCost: 10000000000, baseProduction: 300000, produces: 'nebulaCores', costType: 'starShards' },
+        //coreExtractor: { count: 0, baseCost: 1000, baseProduction: 0.1, produces: 'nebulaCores', costType: 'starShards' },
+        //coreProcessor: { count: 0, baseCost: 10000, baseProduction: 1, produces: 'nebulaCores', costType: 'starShards' },
+        //coreCondenser: { count: 0, baseCost: 100000, baseProduction: 10, produces: 'nebulaCores', costType: 'starShards' },
+        //coreReactor: { count: 0, baseCost: 1000000, baseProduction: 80, produces: 'nebulaCores', costType: 'starShards' },
+        //corePlant: { count: 0, baseCost: 10000000, baseProduction: 600, produces: 'nebulaCores', costType: 'starShards' },
+        //coreAssembly: { count: 0, baseCost: 100000000, baseProduction: 5000, produces: 'nebulaCores', costType: 'starShards' },
+        //coreGenerator: { count: 0, baseCost: 1000000000, baseProduction: 40000, produces: 'nebulaCores', costType: 'starShards' },
+        //coreNexus: { count: 0, baseCost: 10000000000, baseProduction: 300000, produces: 'nebulaCores', costType: 'starShards' },
         
          
         stellarAmplifier: { count: 0, baseCost: 50, baseProduction: 0, produces: 'special', costType: 'stellarFragments' },
