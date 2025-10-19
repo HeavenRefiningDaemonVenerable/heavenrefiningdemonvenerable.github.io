@@ -1,3 +1,4 @@
+alert("load")
 window.moduleLoaded = true;
 
 import { game } from './game-state.js';
