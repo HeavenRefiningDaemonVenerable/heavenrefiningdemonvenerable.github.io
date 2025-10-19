@@ -1,11 +1,11 @@
-# Description
+## Description
 
 A simple incremental game made by me based on space.
 This is simply a demo version as I have yet to implement a lot of features I want to.
 
 P.S: There's nothing space-y about it except the names.
 
-# Features
+## Features
 * Four types of resources
  * Stardust (starter resource)
  * Celestial Shards (resource gained through Cosmic Ascension)
@@ -20,6 +20,6 @@ P.S: There's nothing space-y about it except the names.
 * Over 20 Upgrades.
 * Over 5 Permanent Upgrades
 
-# Known Issues
+## Known Issues
 * Game doesn't save when you close the game.
 * The Upgrades tab grid doesn't properly snap back to its original position and zoom when buying an upgrade.
