@@ -6,7 +6,7 @@ This is simply a demo version as I have yet to implement a lot of features I wan
 P.S: There's nothing space-y about it except the names.
 
 ## Features
-* Four types of resources
+- Four types of resources
  * Stardust (starter resource)
  * Celestial Shards (resource gained through Cosmic Ascension)
  * Cosmic Energy (resource gained through Cosmic Ascension)
