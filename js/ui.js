@@ -395,7 +395,7 @@ function renderBuildings() {
                        'stardustPlant', 'stardustFoundry', 'stardustComplex', 'stardustMegaforge']
         },
         shards: {
-            title: 'Celestial Shards Production',
+            title: 'Star Shards Production',
             icon: '',
             buildings: ['shardCollector', 'shardPress', 'shardCrystallizer', 'shardFoundry', 
                        'shardPlant', 'shardReactor', 'shardComplex', 'shardSingularity']
@@ -433,7 +433,7 @@ function renderBuildings() {
             const building = game.buildings[bKey];
             if (!building) return false;
             
-            if (building.produces === 'celestialShards') {
+            if (building.produces === 'starShards') {
                 return game.achievements.quadrillion.unlocked && game.achievements.firstPrestige.unlocked;
             }
             if (building.produces === 'nebulaCores') {
@@ -504,7 +504,7 @@ function renderBuildings() {
                         const canBuy = amountCanBuy > 0;
                         const resourceNames = {
                             stardust: 'Stardust',
-                            celestialShards: 'Celestial Shards',
+                            starShards: 'Star Shards',
                             nebulaCores: 'Nebula Cores',
                             stellarFragments: 'Stellar Fragments'
                         };
