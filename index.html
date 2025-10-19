@@ -30,5 +30,12 @@
     <div class="app"id="app"></div>
     <audio id="click-sound" controls preload="auto" style="display: none"></audio>
        <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
-    <script defer>eruda.init();</script>
+    <script defer>
+        if (window.location.href.includes('?erudaDebug=true')) {
+            eruda.init()
+        }
+  
+ </script>
+    
+
 </body></html>
