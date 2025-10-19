@@ -253,7 +253,7 @@ export function render() {
 
     app.innerHTML = `
         <div class="container">
-        <div class="utility-bar">
+              <div class="utility-bar">
                   <button class="utility-btn" data-action="openSettings">
                       ⚙️ <span class="btn-label">Settings</span>
                   </button>
@@ -262,7 +262,7 @@ export function render() {
                   </button>
               </div>
               
-              <!-- NEW: Dropdown Menu -->
+              
               <div class="dropdown-menu" id="gameMenu" style="display: none;">
                   <div class="menu-section">
                       <div class="menu-section-title">Game Management</div>
@@ -291,16 +291,12 @@ export function render() {
                       <span class="stat-value" data-stat="cosmicEnergy">${formatNumber(game.cosmicEnergy)}</span>
                   </div>
                   <div class="stat-row">
-                      <span class="stat-label">Stellar Fragments:</span>
-                      <span class="stat-value" data-stat="stellarFragments">${formatNumber(game.stellarFragments)}</span>
-                  </div>
-                  <div class="stat-row">
                       <span class="stat-label">Celestial Shards:</span>
                       <span class="stat-value" data-stat="celestialShards">${formatNumber(game.celestialShards)} (+${formatNumber(game.celestialShardsPerSecond)}/s)</span>
                   </div>
                   <div class="stat-row">
-                      <span class="stat-label">Nebula Cores:</span>
-                      <span class="stat-value" data-stat="nebulaCores">${formatNumber(game.nebulaCores)} (+${formatNumber(game.nebulaCoresPerSecond)}/s)</span>
+                      <span class="stat-label">Stellar Fragments:</span>
+                      <span class="stat-value" data-stat="stellarFragments">${formatNumber(game.stellarFragments)}</span>
                   </div>
                   <div class="stat-row">
                       <span class="stat-label">Prestige Multiplier:</span>
@@ -310,15 +306,6 @@ export function render() {
 
               <div class="forge-section">
                   <button class="forge-button" data-action="clickForge">
-                      <span class="star" style="--x:10px; --y:-20px;"></span>
-                      <span class="star" style="--x:-30px; --y:15px;"></span>
-                      <span class="star" style="--x:25px; --y:25px;"></span>
-                      <span class="star" style="--x:10px; --y:-20px;"></span>
-                      <span class="star" style="--x:-30px; --y:15px;"></span>
-                      <span class="star" style="--x:25px; --y:25px;"></span>
-                      <span class="star" style="--x:10px; --y:-20px;"></span>
-                      <span class="star" style="--x:-30px; --y:15px;"></span>
-                      <span class="star" style="--x:25px; --y:25px;"></span>
                       FORGE STAR
                   </button>
               </div>
@@ -402,26 +389,26 @@ function renderBuildings() {
     const categories = {
         stardust: {
             title: 'Stardust Production',
-            icon: '✨',
+            icon: '',
             buildings: ['stardustCollector', 'stardustExtractor', 'stardustCondenser', 'stardustProcessor', 
                        'stardustEngine', 'stardustRefinery', 'stardustFactory', 'stardustReactor', 
                        'stardustPlant', 'stardustFoundry', 'stardustComplex', 'stardustMegaforge']
         },
         shards: {
             title: 'Celestial Shards Production',
-            icon: '💎',
+            icon: '',
             buildings: ['shardCollector', 'shardPress', 'shardCrystallizer', 'shardFoundry', 
                        'shardPlant', 'shardReactor', 'shardComplex', 'shardSingularity']
         },
         cores: {
             title: 'Nebula Cores Production',
-            icon: '🌌',
+            icon: '',
             buildings: ['coreExtractor', 'coreProcessor', 'coreCondenser', 'coreReactor', 
                        'corePlant', 'coreAssembly', 'coreGenerator', 'coreNexus']
         },
         special: {
             title: 'Special Buildings',
-            icon: '⭐',
+            icon: '',
             buildings: ['stellarAmplifier', 'cosmicHarvester', 'voidEngine']
         }
     };
@@ -523,15 +510,15 @@ function renderBuildings() {
                         };
 
                         const icons = {
-                            stardustCollector: '🔭', stardustExtractor: '⚙️', stardustCondenser: '❄️', stardustProcessor: '🏭',
-                            stardustEngine: '🔧', stardustRefinery: '⚗️', stardustFactory: '🏗️', stardustReactor: '⚡',
-                            stardustPlant: '🌟', stardustFoundry: '🔥', stardustComplex: '🏛️',
-                            stardustMegaforge: '🌠',
-                            shardCollector: '💠', shardPress: '🔨', shardCrystallizer: '💠', shardFoundry: '⚒️',
-                            shardPlant: '💎', shardReactor: '⚗️', shardComplex: '🏰', shardSingularity: '🕳️',
-                            coreExtractor: '🌑', coreProcessor: '🔮', coreCondenser: '🌀', coreReactor: '🌀',
-                            corePlant: '🌌', coreAssembly: '⭐', coreGenerator: '🌟', coreNexus: '✨',
-                            stellarAmplifier: '📡', cosmicHarvester: '🛸', voidEngine: '⚫'
+                            stardustCollector: '', stardustExtractor: '', stardustCondenser: '', stardustProcessor: '',
+                            stardustEngine: '', stardustRefinery: '', stardustFactory: '', stardustReactor: '',
+                            stardustPlant: '', stardustFoundry: '', stardustComplex: '',
+                            stardustMegaforge: '',
+                            shardCollector: '', shardPress: '', shardCrystallizer: '', shardFoundry: '',
+                            shardPlant: '', shardReactor: '', shardComplex: '', shardSingularity: '',
+                            coreExtractor: '', coreProcessor: '', coreCondenser: '', coreReactor: '',
+                            corePlant: '', coreAssembly: '', coreGenerator: '', coreNexus: '',
+                            stellarAmplifier: '', cosmicHarvester: '', voidEngine: ''
                         };
 
                         return `
