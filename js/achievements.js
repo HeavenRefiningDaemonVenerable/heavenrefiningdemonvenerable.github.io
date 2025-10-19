@@ -73,12 +73,12 @@ export function checkAchievements() {
     checkAchievement('quadrillion', game.totalStardust >= 1000000000000000);
     
      
-    checkAchievement('firstShard', game.celestialShardsTotal >= 10);
-    checkAchievement('moreShard', game.celestialShardsTotal >= 1000);
-    checkAchievement('evenmoreShard', game.celestialShardsTotal >= 10000);
-    checkAchievement('tonsmoreShard', game.celestialShardsTotal >= 1000000);
-    checkAchievement('hellmoreShard', game.celestialShardsTotal >= 1000000000);
-    checkAchievement('hellmore2Shard', game.celestialShardsTotal >= 1000000000000);
+    checkAchievement('firstShard', game.starShardsTotal >= 10);
+    checkAchievement('moreShard', game.starShardsTotal >= 1000);
+    checkAchievement('evenmoreShard', game.starShardsTotal >= 10000);
+    checkAchievement('tonsmoreShard', game.starShardsTotal >= 1000000);
+    checkAchievement('hellmoreShard', game.starShardsTotal >= 1000000000);
+    checkAchievement('hellmore2Shard', game.starShardsTotal >= 1000000000000);
 
      
     let totalBuildings = 0;
