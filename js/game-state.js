@@ -4,9 +4,9 @@ export const game = {
     stardustPerSecond: 0,
     stardustPerClick: 1,
     
-    celestialShards: 0,
-    celestialShardsTotal: 0,
-    celestialShardsPerSecond: 0,
+    starShards: 0,
+    starShardsTotal: 0,
+    starShardsPerSecond: 0,
     
     nebulaCores: 0,
     nebulaCoresTotal: 0,
@@ -43,24 +43,24 @@ export const game = {
         stardustMegaforge: { count: 0, baseCost: 1000000000, baseProduction: 12000000, produces: 'stardust' },
         
          
-        shardCollector: { count: 0, baseCost: 100000, baseProduction: 0.5, produces: 'celestialShards', costType: 'stardust' },
-        shardPress: { count: 0, baseCost: 12000, baseProduction: 5, produces: 'celestialShards', costType: 'celestialShards' },
-        shardCrystallizer: { count: 0, baseCost: 60000, baseProduction: 40, produces: 'celestialShards', costType: 'celestialShards' },
-        shardFoundry: { count: 0, baseCost: 360000, baseProduction: 300, produces: 'celestialShards', costType: 'celestialShards' },
-        shardPlant: { count: 0, baseCost: 1800000, baseProduction: 2000, produces: 'celestialShards', costType: 'celestialShards' },
-        shardReactor: { count: 0, baseCost: 12000000, baseProduction: 15000, produces: 'celestialShards', costType: 'celestialShards' },
-        shardComplex: { count: 0, baseCost: 60000000, baseProduction: 100000, produces: 'celestialShards', costType: 'celestialShards' },
-        shardSingularity: { count: 0, baseCost: 36000000, baseProduction: 800000, produces: 'celestialShards', costType: 'celestialShards' },
+        shardCollector: { count: 0, baseCost: 100000, baseProduction: 0.5, produces: 'starShards', costType: 'stardust' },
+        shardPress: { count: 0, baseCost: 12000, baseProduction: 5, produces: 'starShards', costType: 'starShards' },
+        shardCrystallizer: { count: 0, baseCost: 60000, baseProduction: 40, produces: 'starShards', costType: 'starShards' },
+        shardFoundry: { count: 0, baseCost: 360000, baseProduction: 300, produces: 'starShards', costType: 'starShards' },
+        shardPlant: { count: 0, baseCost: 1800000, baseProduction: 2000, produces: 'starShards', costType: 'starShardd' },
+        shardReactor: { count: 0, baseCost: 12000000, baseProduction: 15000, produces: 'starShards', costType: 'starShards' },
+        shardComplex: { count: 0, baseCost: 60000000, baseProduction: 100000, produces: 'starShards', costType: 'starShards' },
+        shardSingularity: { count: 0, baseCost: 36000000, baseProduction: 800000, produces: 'starShards', costType: 'starShards' },
         
          
-        coreExtractor: { count: 0, baseCost: 1000, baseProduction: 0.1, produces: 'nebulaCores', costType: 'celestialShards' },
-        coreProcessor: { count: 0, baseCost: 10000, baseProduction: 1, produces: 'nebulaCores', costType: 'celestialShards' },
-        coreCondenser: { count: 0, baseCost: 100000, baseProduction: 10, produces: 'nebulaCores', costType: 'celestialShards' },
-        coreReactor: { count: 0, baseCost: 1000000, baseProduction: 80, produces: 'nebulaCores', costType: 'celestialShards' },
-        corePlant: { count: 0, baseCost: 10000000, baseProduction: 600, produces: 'nebulaCores', costType: 'celestialShards' },
-        coreAssembly: { count: 0, baseCost: 100000000, baseProduction: 5000, produces: 'nebulaCores', costType: 'celestialShards' },
-        coreGenerator: { count: 0, baseCost: 1000000000, baseProduction: 40000, produces: 'nebulaCores', costType: 'celestialShards' },
-        coreNexus: { count: 0, baseCost: 10000000000, baseProduction: 300000, produces: 'nebulaCores', costType: 'celestialShards' },
+        coreExtractor: { count: 0, baseCost: 1000, baseProduction: 0.1, produces: 'nebulaCores', costType: 'starShards' },
+        coreProcessor: { count: 0, baseCost: 10000, baseProduction: 1, produces: 'nebulaCores', costType: 'starShards' },
+        coreCondenser: { count: 0, baseCost: 100000, baseProduction: 10, produces: 'nebulaCores', costType: 'starShards' },
+        coreReactor: { count: 0, baseCost: 1000000, baseProduction: 80, produces: 'nebulaCores', costType: 'starShards' },
+        corePlant: { count: 0, baseCost: 10000000, baseProduction: 600, produces: 'nebulaCores', costType: 'starShards' },
+        coreAssembly: { count: 0, baseCost: 100000000, baseProduction: 5000, produces: 'nebulaCores', costType: 'starShards' },
+        coreGenerator: { count: 0, baseCost: 1000000000, baseProduction: 40000, produces: 'nebulaCores', costType: 'starShards' },
+        coreNexus: { count: 0, baseCost: 10000000000, baseProduction: 300000, produces: 'nebulaCores', costType: 'starShards' },
         
          
         stellarAmplifier: { count: 0, baseCost: 50, baseProduction: 0, produces: 'special', costType: 'stellarFragments' },
