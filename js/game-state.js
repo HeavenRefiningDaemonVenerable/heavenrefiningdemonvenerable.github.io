@@ -121,10 +121,10 @@ export const game = {
         synergy4: { cost: 500000000, purchased: false, multiplier: 4, requiresBuildings: 20 },
         
          
-        shardBoost1: { cost: 100000000, purchased: false, multiplier: 2, resourceType: 'celestialShards' },
-        shardBoost2: { cost: 1000000000, purchased: false, multiplier: 2.5, resourceType: 'celestialShards' },
-        shardBoost3: { cost: 10000000000, purchased: false, multiplier: 3, resourceType: 'celestialShards' },
-        shardBoost4: { cost: 100000000000, purchased: false, multiplier: 4, resourceType: 'celestialShards' },
+        shardBoost1: { cost: 100000000, purchased: false, multiplier: 2, resourceType: 'starShards' },
+        shardBoost2: { cost: 1000000000, purchased: false, multiplier: 2.5, resourceType: 'starShards' },
+        shardBoost3: { cost: 10000000000, purchased: false, multiplier: 3, resourceType: 'starShards' },
+        shardBoost4: { cost: 100000000000, purchased: false, multiplier: 4, resourceType: 'starShards' },
         
          
         coreBoost1: { cost: 1000000, purchased: false, multiplier: 2, resourceType: 'nebulaCores' },
@@ -133,9 +133,9 @@ export const game = {
         coreBoost4: { cost: 1000000000, purchased: false, multiplier: 4, resourceType: 'nebulaCores' },
         
          
-        shardToStardust: { cost: 500000000, purchased: false, crossBonus: { from: 'celestialShards', to: 'stardust', rate: 0.01 } },
-        coreToShard: { cost: 50000000, purchased: false, crossBonus: { from: 'nebulaCores', to: 'celestialShards', rate: 0.01 } },
-        coreToStardust: { cost: 1000000000, purchased: false, crossBonus: { from: 'nebulaCores', to: 'stardust', rate: 0.005 } },
+        shardToStardust: { cost: 500000000, purchased: false, crossBonus: { from: 'starShards', to: 'stardust', rate: 0.01 } },
+        //coreToShard: { cost: 50000000, purchased: false, crossBonus: { from: 'nebulaCores', to: 'starShards', rate: 0.01 } },
+        //coreToStardust: { cost: 1000000000, purchased: false, crossBonus: { from: 'nebulaCores', to: 'stardust', rate: 0.005 } },
         
          
         autoClick1: { cost: 5000, purchased: false, autoClickRate: 1 },
